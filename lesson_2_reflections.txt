@@ -2,5 +2,40 @@ What happens when you initialize a repository? Why do you need to do it?
 	We need to initialize a repository since that contains all the versions of the files for version contorol 
 	
 How is the staging area different from the working directory and the repository? What value do you think it offers?
-	I have no clue of it yet
+	The staging area keeps the last commit files or the files that one adds into it after modification for commit
 	
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?	
+	They are helpful in the experiments or side projects, the branches can be merged in future if the experiments are
+	successful.
+	
+How do the diagrams help you visualize the branch structure?
+	The head always point to the current commit, now you can be in the detach head state since its not reachable. So
+	we can in that case create a branch for that commit which can be done in a line or git branch and git checkout
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	It will do the same as the answer to the above question.
+	
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Automatic helps a lot but in case of conflicts its better to resolve it and then adding it to the staging area	
+	and then performing a commit and then merge
+
+git clone	
+git diff	
+git diff --stage
+git diff <old commit, new commit>
+git show // this is git diff parent child commitid
+git checkout <commitId OR branch name>	
+git status
+git add
+git commit
+git branch
+git log --graph --oneline master coins // visualises the branches
+git merge branch1 branch2 // This compares against the parent commit since they were separated to make changes
+git branch -d <branch> // deleting a branch
+
+git remote // gives the list of remotes (links to a github repository)
+git remote add origin git@github.com:gauravsgr/reflections.git // creates a new remote to repository reflections 
+																	created on github
+git remote -v // gives out a verbose message of the remote connection
+																	
+
